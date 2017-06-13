@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>红包大接龙</title>
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no">
+    <link rel="stylesheet" type="text/css"  href="css/main.css" />
+    <link rel="stylesheet" type="text/css"  href="css/jielong.css" />
+</head>
+<body>
+    <div id="content">
+        <input type="text" placeholder="商会或公司名称">
+        <input type="text" placeholder="职位">
+        <input type="text" placeholder="姓名">
+        <div id="upload">
+            <input type="file" >
+        </div>
+        <div id="luyin">
+            <img src="image/luyin.png" alt="">
+            <img src="image/play.png" alt="">
+
+        </div>
+        <div class="tip">(录制拜年语音)</div>
+        <div id="hongbao">
+            <img src="image/hongbao.png" alt="">
+        </div>
+        <div class="tip">(发拜年红包也可不发)</div>
+        <div id="bainianye" class="botton">生成拜年页</div>
+        <div  class="fahongbao sweep">
+            <div>
+                <div class="close">&times;</div>
+                <div class="popup">
+
+                    <div class="number" for="hbgs">
+                        <span>红包个数</span>
+                        <input type="number" name="number" placeholder="20" is="hbgs">
+                        <div>个</div>
+
+                    </div>
+
+                    <div class="mark">红包个数越多，收到祝福的人越多</div>
+                    <div class="number">
+                        <span>总金额</span>
+                        <input type="number" name="number" placeholder="20" style="width:67%">
+                        <div>元</div>
+                    </div>
+                    <div class="mark">随机金额直接发到用户钱包</div>
+                    <div id="fahongbao" class="botton">塞钱进红包</div>
+                    <div class="tip">未领取的红包将在正月十五之后退还给您</div>
+                </div>
+            </div>
+
+        </div>
+        <div  class="telP sweep">
+            <div>
+                <div class="close">&times;</div>
+                <div class="popup">
+                    <div class="tip">请先验证手机号码</div>
+                    <input type="tel"  placeholder="手机号">
+
+
+                    <div class="telyzmm">
+                        <input type="text" placeholder="验证码">
+                        <div id="QRcode" class="botton">获取验证码</div>
+                    </div>
+                    <div id="submit" class="botton">确定</div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <audio autoplay="autoplay">
+        <source src="xinchun.mp3" type="audio/mpeg">
+    </audio>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/jielong.js"></script>
+</html>
